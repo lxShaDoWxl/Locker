@@ -34,7 +34,7 @@ class LockerTest extends AbstractTestCase
      *
      * @return void
      */
-    protected function getEnvironmentSetUp($app)
+    protected function getEnvironmentSetUp($app): void
     {
         parent::getEnvironmentSetUp($app);
 
@@ -46,7 +46,7 @@ class LockerTest extends AbstractTestCase
      *
      * @return string
      */
-    protected function getFacadeAccessor()
+    protected static function getFacadeAccessor():string
     {
         return 'locker';
     }
@@ -56,7 +56,7 @@ class LockerTest extends AbstractTestCase
      *
      * @return string
      */
-    protected function getFacadeClass()
+    protected static function getFacadeClass(): string
     {
         return LockerFacade::class;
     }
@@ -66,7 +66,7 @@ class LockerTest extends AbstractTestCase
      *
      * @return string
      */
-    protected function getFacadeRoot()
+    protected static function getFacadeRoot(): string
     {
         return Locker::class;
     }
